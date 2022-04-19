@@ -1,0 +1,135 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - bot_hru
+  - SOS
+  - discuss_depression
+  - discuss_anxiety
+  - discuss_OCD
+  - discuss_PTSD
+  - discuss_ADHD
+  - depression_symptoms
+  - anxiety_symptoms
+  - OCD_symptoms
+  - PTSD_symptoms
+  - ADHD_symptoms
+  - depression_remedy
+  - anxiety_remedy
+  - OCD_remedy
+  - PTSD_remedy
+  - ADHD_remedy
+
+
+
+responses:
+
+  utter_greet:
+  - text: "Hey! How are you? This is Moodbot! I can help you discuss mental disorders (ex: Depression, Anxiety, OCD, PTSD & ADHD), their symptoms and remedies."
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://imgur.com/t/funny?source=featured_tag_module"
+
+  utter_Iamfine:
+  - text: "I'm fine, what about you!"
+  - text: "I'm fine, how about you!"
+  - text: "Great, and you!"
+  - text: "I feel good, how about you!"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+  - text: "Did you find this helpful?"
+  - text: "Did that give you what you needed?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+  - text: "Great!"
+  - text: "NICE!"
+
+  utter_goodbye:
+  - text: "Bye"
+  - text: "See ya"
+  - text: "Goodbye!"
+
+  utter_iamabot:
+  - text: "I'm a Moodbot, I can help you with your mental health!"
+
+  utter_emergency:
+  - text: "To contact the National Mental Health Services and Detoxification in Egypt:  
+                                                                                                                                                                                                                                                               
+Telephone: 20817091 (202)
+
+Fax: 20817091 (202)
+
+Emails:
+
+Media and Public Relations: mediawarenessmhs@gmail.com
+
+General Administration of Hospital Affairs: gdsa.mentalhealth@gmail.com
+
+Addiction Management: addiction@mentalhealthegypt.com
+
+Department of External Relations: extaffairs@mentalhealthegypt.com
+
+Training Administration: trainmhs@gmail.com"
+
+  utter_depression:
+  - text: "Depression is classified as a mood disorder. It may be described as feelings of sadness, loss, or anger that interfere with a person’s everyday activities. Though depression and grief share some features, depression is different from grief felt after losing a loved one or sadness felt after a traumatic life event. Depression usually involves self-loathing or a loss of self-esteem, while grief typically does not."
+
+  utter_anxiety:
+  - text: "Anxiety is your body’s natural response to stress. It’s a feeling of fear or apprehension about what’s to come. The first day of school, going to a job interview, or giving a speech may cause most people to feel fearful and nervous. But if your feelings of anxiety are extreme, last for longer than six months, and are interfering with your life, you may have an anxiety disorder."
+
+  utter_OCD:
+  - text: "Obsessive-compulsive disorder (OCD) is a chronic mental health condition that involves obsessions, compulsions, or both. People living with OCD typically experience obsessions, or repetitive unwanted thoughts that prompt an extreme urge to repeat a specific behavior. They then act out that urge, or compulsion, to help relieve the obsessive thought. Plenty of people double-check to make sure they’ve locked the front door or turned off the stove. These habits might help you feel more secure, but they don’t automatically suggest OCD."
+
+  utter_PTSD:
+  - text: "Post-traumatic stress disorder (PTSD) is a mental health disorder that begins after a traumatic event. That event may involve a real or perceived threat of injury or death. This can include:
+
+a natural disaster like an earthquake or tornado, military combat physical or sexual violence, physical or sexual abuse or an accident.
+People with PTSD often feel a heightened sense of danger. Their natural fight-or-flight response is altered, causing them to feel stressed or fearful, even when they’re in a safe situation."
+
+  utter_ADHD:
+  - text: "Attention deficit hyperactivity disorder (ADHD) is a mental health condition that can cause unusual levels of hyperactivity and impulsive behaviors. People with ADHD may also have trouble focusing their attention on a single task or sitting still for long periods of time. Many people experience inattention and changes in energy levels. For a person with ADHD, this happens more often and to a greater extent compared with people who don’t have the condition. It can have a significant effect on their studies, work, and home life."
+
+  utter_depression_symptoms:
+  - text: "If you experience some of the following signs and symptoms of depression nearly every day for at least 2 weeks, you may be living with depression: feeling sad or “empty”, feeling hopeless, worthless or pessimistic, crying a lot, feeling bothered, annoyed, or angry, loss of interest in hobbies and interests you once enjoyed, decreased energy or fatigue, difficulty concentrating, remembering, or making decisions, moving or talking more slowly, difficulty sleeping, early morning awakening, or oversleeping, appetite or weight changes, chronic physical pain with no clear cause that does not get better with treatment (headaches, aches or pains, digestive problems, cramps), thoughts of death, suicide, self-harm, or suicide attempts.
+"
+  utter_anxiety_symptoms:
+  - text: "Symptoms of general anxiety include: increased heart rate, rapid breathing, restlessness, trouble concentrating, difficulty falling asleep.
+"
+  utter_OCD_symptoms:
+  - text: "The content of obsessive thoughts can vary widely, but a few common themes include: worries about germs, dirt, or illness, fears of harming yourself or someone else, fears of saying something offensive or obscene, a need to have your possessions aligned, orderly, or symmetrical, explicit sexual or violent thoughts, worries about throwing things away, questioning your sexual desires or orientation, worries about the health and safety of yourself or your loved ones, intrusive images, words, or sounds. 
+Examples of compulsive behaviors in OCD include: washing your hands, objects, or body, organizing or aligning objects in a specific way, counting or repeating specific phrases, touching something a set number of times, seeking reassurance from others, collecting certain objects or buying several of the same item, hiding objects you could use to hurt yourself or someone else, mentally going over your actions to make sure you haven’t harmed anyone else."
+
+  utter_PTSD_symptoms:
+  - text: "Symptoms of PTSD fall into four groups: 1. Intrusion like: flashbacks where you feel like you relive the event over and over, vivid, unpleasant memories of the event infiltrating seemingly unrelated thoughts or memories, frequent nightmares about the event, intense mental or physical distress when you think about the event. 2. Avoidance like: avoiding people, places, or situations that remind you of the traumatic event. 3. Arousal and reactivity like: trouble concentrating, startling easily and having an exaggerated response when you’re startled, a constant feeling of being on edge, irritability, bouts of anger. 4. Cognition and mood like: negative thoughts about yourself, distorted feelings of guilt, worry, or blame, trouble remembering important parts of the event, reduced interest in activities you once loved."
+
+  utter_ADHD_symptoms:
+  - text: "A wide range of behaviors are associated with ADHD. Some of the more common ones include: having trouble focusing or concentrating on tasks, being forgetful about completing tasks, being easily distracted, having difficulty sitting still, interrupting people while they’re talking"
+
+  utter_depression_remedy:
+  - text: "5 Natural remedies for depression are: 1. Exercising to pump you up 2. Finding ways to relax (Ex. progressive muscle relaxation, relaxation imagery, autogenic training) 3. Think about meditation 4. Shaping the body and mind with yoga 5. Guided imagery and music therapy "
+
+  utter_anxiety_remedy:
+  - text: "10 natural remedies for anxiety are: 1. Staying active by exercising 2. Quitting smoking cigarettes 3. Limiting caffeine intake 4. Prioritizing getting a good night rest 5. Meditating and practicing mindfulness 6. Eating a balanced diet 7. Practicing deep breathing 8. Trying aromatherapy 9. Drinking chamomile tea 10. Writing and Time management strategies "
+
+  utter_OCD_remedy:
+  - text: "5 Natural remedies for OCD are: 1. Breathing exercises 2. Meditation and mindfulness techniques 3. Creating a self-care routine 4. Opening up to loved ones 5. Joining support groups"
+
+  utter_PTSD_remedy:
+  - text: "5 Natural remedies for PTSD are: 1. Eating a nutrient-rich, balanced diet 2. Getting enough quality rest and sleep 3. Getting regular exercise 4. Limiting exposure to situations or people that increase stress or anxiety, as often as possible 5. Joining support groups"
+
+  utter_ADHD_remedy:
+  - text: "5 Natural remedies for ADHD are: 1. Take up a sport 2. Spend time in nature 3. Limit media consumption 4. Stick to a diet 5. Stay organized by (Making lists, Keeping a calendar and Setting reminders)"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
