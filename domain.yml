@@ -5,6 +5,7 @@ intents:
   - goodbye
   - affirm
   - deny
+  - Thank
   - mood_great
   - mood_unhappy
   - bot_challenge
@@ -25,6 +26,8 @@ intents:
   - OCD_remedy
   - PTSD_remedy
   - ADHD_remedy
+  - Repeat
+  - What_to_repeat
 
 
 
@@ -36,6 +39,12 @@ responses:
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
     image: "https://imgur.com/t/funny?source=featured_tag_module"
+
+  utter_Thank:
+  - text: "Anytime!"
+  - text: "You are welcome!"
+  - text: "No need!"
+  - text: "Welcome!"
 
   utter_Iamfine:
   - text: "I'm fine, what about you!"
@@ -128,6 +137,26 @@ Examples of compulsive behaviors in OCD include: washing your hands, objects, or
 
   utter_ADHD_remedy:
   - text: "5 Natural remedies for ADHD are: 1. Take up a sport 2. Spend time in nature 3. Limit media consumption 4. Stick to a diet 5. Stay organized by (Making lists, Keeping a calendar and Setting reminders)"
+
+  utter_what_to_repeat:
+  - text: "What do you want me to tell you?"
+  - text: "What do you want to hear?"
+  - text: "What do you need to hear?"
+  - text: "What do you need me to say?"
+
+entities: []
+
+slots:
+  sentence:
+    type: text
+    mappings:
+    - type: custom
+
+actions:
+- action_receive_sentence
+- action_repeat_sentence
+
+
 
 
 session_config:

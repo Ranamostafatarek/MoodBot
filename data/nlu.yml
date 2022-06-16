@@ -54,6 +54,16 @@ nlu:
     - no way
     - not really
 
+- intent: Thank
+  examples: |
+    - Thank you
+    - Thank youuuu
+    - Thank u
+    - Thanks!
+    - Thanks alot!!
+    - Thank you alot
+    - Thanks rasa
+
 - intent: mood_great
   examples: |
     - perfect
@@ -90,6 +100,10 @@ nlu:
     - extremly sad
     - so saad
     - so sad
+    - can you make me laugh?
+    - make me laugh please
+    - cheer me up
+    - can you cheer me up please?
 
 - intent: bot_challenge
   examples: |
@@ -104,6 +118,9 @@ nlu:
     - How are you?
     - HRU?
     - How do you do?
+    - How are you bot?
+    - How are you moodbot?
+    - How do you feel?
 
 - intent: SOS
   examples: |
@@ -372,4 +389,33 @@ nlu:
     - How to fight ADHD?
     - How to defeat ADHD?
     - I have ADHD 
+    
+- intent: Repeat
+  examples: |
+    - Repeat what I say
+    - Say after me
+    - repeat 
+    - say this
+    - say
+    - tell me this
+    
+
+- intent: What_to_repeat
+  examples: |
+    - You are beautiful
+    - you are amazing
+    - you are great
+    - you are capable
+    - everything will be okay
+    - everything is okay
+    - you will be okay
+    - you'll be fine
+    
+    
+    
+    
+    
+    
+    
+    
     

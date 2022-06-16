@@ -359,4 +359,15 @@ stories:
   - intent: bot_hru
   - action: utter_Iamfine
 
+- story: Thanks
+  steps:
+  - intent: Thank
+  - action: utter_Thank
 
+- story: Repeat
+  steps:
+  - intent: Repeat
+  - action: utter_what_to_repeat
+  - intent: What_to_repeat
+  - action: action_receive_sentence
+  - action: action_repeat_sentence
