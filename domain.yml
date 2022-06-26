@@ -1,6 +1,7 @@
 version: "3.1"
 
 intents:
+  - get_started
   - greet
   - goodbye
   - affirm
@@ -37,8 +38,8 @@ responses:
   - text: "Hey! How are you? This is Moodbot! I can help you discuss mental disorders (ex: Depression, Anxiety, OCD, PTSD & ADHD), their symptoms and remedies."
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://imgur.com/t/funny?source=featured_tag_module"
+  - text: "Here is something to cheer you up: https://imgur.com/t/funny?source=featured_tag_module"
+
 
   utter_Thank:
   - text: "Anytime!"
