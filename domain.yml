@@ -1,5 +1,8 @@
 version: "3.1"
 
+entities:
+  - name
+
 intents:
   - get_started
   - greet
@@ -27,15 +30,18 @@ intents:
   - OCD_remedy
   - PTSD_remedy
   - ADHD_remedy
-  - Repeat
-  - What_to_repeat
+  - something_nice
+  - say_name
+  - mental_health
+  - out_of_scope
 
 
 
 responses:
 
   utter_greet:
-  - text: "Hey! How are you? This is Moodbot! I can help you discuss mental disorders (ex: Depression, Anxiety, OCD, PTSD & ADHD), their symptoms and remedies."
+  - text: "Hey! This is Moodbot! Can you provide your name please? (Ex: Zain Mostafa)"
+
 
   utter_cheer_up:
   - text: "Here is something to cheer you up: https://imgur.com/t/funny?source=featured_tag_module"
@@ -139,27 +145,37 @@ Examples of compulsive behaviors in OCD include: washing your hands, objects, or
   utter_ADHD_remedy:
   - text: "5 Natural remedies for ADHD are: 1. Take up a sport 2. Spend time in nature 3. Limit media consumption 4. Stick to a diet 5. Stay organized by (Making lists, Keeping a calendar and Setting reminders)"
 
-  utter_what_to_repeat:
-  - text: "What do you want me to tell you?"
-  - text: "What do you want to hear?"
-  - text: "What do you need to hear?"
-  - text: "What do you need me to say?"
+  utter_something_nice:
+  - text: "You are amazing!"
+  - text: "You are wonderful!"
+  - text: "You are capable!"
+  - text: "You are strong!"
 
-entities: []
+  utter_mental_health:
+  - text: "Mental health refers to your emotional and psychological well-being. Having good mental health helps you lead a relatively happy and healthy life. It helps you demonstrate resilience and the ability to cope in the face of life’s adversities."
+
+
+  utter_out_of_scope:
+  - text: "Can you please rephrase your sentence?"
+
+  utter_default:
+  - text: "I'm sorry, can you rephrase your sentence?"
 
 slots:
-  sentence:
+
+  name:
     type: text
     mappings:
-    - type: custom
+      - type: custom
+
+
 
 actions:
-- action_receive_sentence
-- action_repeat_sentence
-
+- action_save_name
+- action_say_name
 
 
 
 session_config:
   session_expiration_time: 60
-  carry_over_slots_to_new_session: true
+  carry_over_slots_to_new_session: false
