@@ -1,12 +1,13 @@
 <html>
    
     <body>
+
       <script>!(function () {
       let e = document.createElement("script"),
       t = document.head || document.getElementsByTagName("head")[0];
       (e.src =
       "https://cdn.jsdelivr.net/npm/rasa-webchat@1.x.x/lib/index.js"),
-      // Replace 1.x.x with the version that you want
+
       (e.async = !0),
       (e.onload = () => {
         window.WebChat.default(
@@ -14,13 +15,62 @@
             initPayload: '/get_started',
             customData: { language: "en" },
             socketUrl: "http://localhost:5005",
-            // add other props here
+            title: 'Mood Bot',
+            subtitle: 'Get Your Daily Mood Boost!',
+            profileAvatar: "Icon.png",
+            userBackgroundColor: "PaleVioletRed",
+            userTextColor: "white",
+            mainColor: "CornflowerBlue",
+
+
           },
+
           null
         );
       }),
       t.insertBefore(e, t.firstChild);
   })();
+  localStorage.clear();
   </script>
+
+    <head>
+
+    <style>
+    body {
+      background-image: url('Online Therapy.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    </style>
+      <style>
+
+body {
+  font-family: "Brush Script MT", cursive;
+  //font-family: Garamond, serif;
+  margin: 20;
+}
+
+.header {
+  padding: 0px;
+  text-align: left;
+  color: Indigo;
+  font-size: 40px;
+}
+
+</style>
+
+      <div class="header">
+  <h1>MoodBot</h1>
+  <p>You ask, and I help!</p> </div>
+
+    </head>
+
+
     </body>
+
+<head>
+      <title> Moodbot Website  </title>  <link rel="icon" type="image/png" href="Icon.png"/>
+</head>
+
 </html>
