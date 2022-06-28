@@ -8,29 +8,41 @@ from rasa_sdk.executor import CollectingDispatcher
 class ActionReceiveSentence(Action):
 
     def name(self) -> Text:
-        return "action_receive_sentence"
+        return "action_save_name"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         text = tracker.latest_message['text']
-        dispatcher.utter_message(text=f"I'll remember your sentence!")
-        return [SlotSet("sentence", text)]
+
+        return [SlotSet("name", text)]
+
 
 
 class ActionSaySentence(Action):
 
     def name(self) -> Text:
-        return "action_repeat_sentence"
+        return "action_say_name"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        sentence = tracker.get_slot("sentence").upper()
-        if not sentence:
-            dispatcher.utter_message(text="I don't know what to repeat")
+        name = tracker.get_slot("name")
+
+        if not name:
+            dispatcher.utter_message(text="I don't know your name")
         else:
-            dispatcher.utter_message(text=f"I want to tell you that {sentence}!")
+            dispatcher.utter_message(text=f"Good to hear from you {name}, I can help you discuss mental disorders (ex: Depression, Anxiety, OCD, PTSD & ADHD), their symptoms and remedies!")
         return []
+
+
+
+
+
+
+
+
+
+
