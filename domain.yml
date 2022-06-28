@@ -155,8 +155,8 @@ Examples of compulsive behaviors in OCD include: washing your hands, objects, or
   - text: "Mental health refers to your emotional and psychological well-being. Having good mental health helps you lead a relatively happy and healthy life. It helps you demonstrate resilience and the ability to cope in the face of life’s adversities."
 
 
-  utter_out_of_scope:
-  - text: "Can you please rephrase your sentence?"
+#  utter_out_of_scope:
+#  - text: "Can you please rephrase your sentence?"
 
   utter_default:
   - text: "I'm sorry, can you rephrase your sentence?"
@@ -178,4 +178,4 @@ actions:
 
 session_config:
   session_expiration_time: 60
-  carry_over_slots_to_new_session: false
+  carry_over_slots_to_new_session: true
