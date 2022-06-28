@@ -178,6 +178,7 @@ nlu:
     - Anxiety or stress?
     - Anxiety or fear?
     - Anxiety or just nervousness?
+    - tell me about anxiety
 
 - intent: discuss_OCD
   examples: |
@@ -195,6 +196,7 @@ nlu:
     - Repetitive unwanted thoughts
     - Double-checking
     - Urge to double check
+    - tell me about ocd
 
 - intent: discuss_PTSD
   examples: |
@@ -211,6 +213,7 @@ nlu:
     - Traumatize
     - Traumatic event
     - PTSD and feeling in danger
+    - tell me about ptsd
 
 - intent: discuss_ADHD
   examples: |
@@ -228,6 +231,7 @@ nlu:
     - Focusing problems
     - I have a problem with focusing my attention
     - My energy levels change frequently
+    - tell me about adhd
 
 - intent: depression_symptoms
   examples: |
@@ -402,6 +406,8 @@ nlu:
     - tell me something great 
     - change my mood
     - enhance my mood
+    - mood boost
+    - give me a mood boost
     
 
 - intent: mental_health
@@ -414,6 +420,7 @@ nlu:
     - can you talk to me about mental health?
     - my mental health
     - what is my mental health?
+
 
 - intent: say_name
   examples: |

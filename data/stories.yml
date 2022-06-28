@@ -14,9 +14,6 @@ stories:
 
 - story: sad path 1
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
@@ -25,9 +22,6 @@ stories:
 
 - story: sad path 2
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
@@ -36,9 +30,6 @@ stories:
 
 - story: sad path 3
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: SOS
   - action: utter_emergency
   - action: utter_did_that_help
@@ -47,9 +38,6 @@ stories:
 
 - story: sad path 4
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: SOS
   - action: utter_emergency
   - action: utter_did_that_help
@@ -58,7 +46,6 @@ stories:
 
 - story: sad path 5
   steps:
-  - intent: get_started
   - intent: SOS
   - action: utter_emergency
   - action: utter_did_that_help
@@ -67,9 +54,6 @@ stories:
 
 - story: sad path 6
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: SOS
   - action: utter_emergency
   - action: utter_did_that_help
@@ -78,9 +62,6 @@ stories:
 
 - story: sad path 7
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: discuss_depression
   - action: utter_depression
   - action: utter_did_that_help
@@ -89,9 +70,6 @@ stories:
 
 - story: sad path 8
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: discuss_anxiety
   - action: utter_anxiety
   - action: utter_did_that_help
@@ -100,9 +78,6 @@ stories:
 
 - story: sad path 9
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: discuss_OCD
   - action: utter_OCD
   - action: utter_did_that_help
@@ -111,9 +86,6 @@ stories:
 
 - story: sad path 10
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: discuss_PTSD
   - action: utter_PTSD
   - action: utter_did_that_help
@@ -122,9 +94,6 @@ stories:
 
 - story: sad path 11
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: depression_symptoms
   - action: utter_depression_symptoms
   - action: utter_did_that_help
@@ -133,9 +102,6 @@ stories:
 
 - story: sad path 12
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: anxiety_symptoms
   - action: utter_anxiety_symptoms
   - action: utter_did_that_help
@@ -144,9 +110,6 @@ stories:
 
 - story: sad path 13
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: OCD_symptoms
   - action: utter_OCD_symptoms
   - action: utter_did_that_help
@@ -155,9 +118,6 @@ stories:
 
 - story: sad path 14
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: PTSD_symptoms
   - action: utter_PTSD_symptoms
   - action: utter_did_that_help
@@ -166,9 +126,6 @@ stories:
 
 - story: sad path 15
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: ADHD_symptoms
   - action: utter_ADHD_symptoms
   - action: utter_did_that_help
@@ -177,9 +134,6 @@ stories:
 
 - story: sad path 16
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: depression_remedy
   - action: utter_depression_remedy
   - action: utter_did_that_help
@@ -188,9 +142,6 @@ stories:
 
 - story: sad path 17
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: anxiety_remedy
   - action: utter_anxiety_remedy
   - action: utter_did_that_help
@@ -199,9 +150,6 @@ stories:
 
 - story: sad path 18
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: OCD_remedy
   - action: utter_OCD_remedy
   - action: utter_did_that_help
@@ -210,9 +158,6 @@ stories:
 
 - story: sad path 19
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: PTSD_remedy
   - action: utter_PTSD_remedy
   - action: utter_did_that_help
@@ -221,9 +166,6 @@ stories:
 
 - story: sad path 20
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: discuss_depression
   - action: utter_depression
   - action: utter_did_that_help
@@ -232,9 +174,6 @@ stories:
 
 - story: sad path 21
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: discuss_anxiety
   - action: utter_anxiety
   - action: utter_did_that_help
@@ -243,9 +182,6 @@ stories:
 
 - story: sad path 22
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: discuss_OCD
   - action: utter_OCD
   - action: utter_did_that_help
@@ -254,9 +190,6 @@ stories:
 
 - story: sad path 23
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: discuss_PTSD
   - action: utter_PTSD
   - action: utter_did_that_help
@@ -265,9 +198,6 @@ stories:
 
 - story: sad path 24
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: discuss_ADHD
   - action: utter_ADHD
   - action: utter_did_that_help
@@ -276,9 +206,6 @@ stories:
 
 - story: sad path 25
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: depression_symptoms
   - action: utter_depression_symptoms
   - action: utter_did_that_help
@@ -287,9 +214,6 @@ stories:
 
 - story: sad path 26
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: anxiety_symptoms
   - action: utter_anxiety_symptoms
   - action: utter_did_that_help
@@ -298,9 +222,6 @@ stories:
 
 - story: sad path 27
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: OCD_symptoms
   - action: utter_OCD_symptoms
   - action: utter_did_that_help
@@ -309,9 +230,6 @@ stories:
 
 - story: sad path 28
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: PTSD_symptoms
   - action: utter_PTSD_symptoms
   - action: utter_did_that_help
@@ -320,9 +238,6 @@ stories:
 
 - story: sad path 29
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: ADHD_symptoms
   - action: utter_ADHD_symptoms
   - action: utter_did_that_help
@@ -331,9 +246,6 @@ stories:
 
 - story: sad path 30
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: depression_remedy
   - action: utter_depression_remedy
   - action: utter_did_that_help
@@ -342,9 +254,6 @@ stories:
 
 - story: sad path 31
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: anxiety_remedy
   - action: utter_anxiety_remedy
   - action: utter_did_that_help
@@ -353,9 +262,6 @@ stories:
 
 - story: sad path 32
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: OCD_remedy
   - action: utter_OCD_remedy
   - action: utter_did_that_help
@@ -364,9 +270,6 @@ stories:
 
 - story: sad path 33
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: PTSD_remedy
   - action: utter_PTSD_remedy
   - action: utter_did_that_help
@@ -375,9 +278,6 @@ stories:
 
 - story: sad path 34
   steps:
-  - intent: get_started
-  - intent: greet
-  - action: utter_greet
   - intent: ADHD_remedy
   - action: utter_ADHD_remedy
   - action: utter_did_that_help
@@ -386,13 +286,11 @@ stories:
 
 - story: bye path 35
   steps:
-  - intent: get_started
   - intent: goodbye
   - action: utter_goodbye
 
 - story: hru 36
   steps:
-  - intent: get_started
   - intent: greet
   - action: utter_greet
   - intent: bot_hru
@@ -400,13 +298,11 @@ stories:
 
 - story: Thanks
   steps:
-  - intent: get_started
   - intent: Thank
   - action: utter_Thank
 
 - story: Repeat
   steps:
-  - intent: get_started
   - intent: something_nice
   - action: utter_something_nice
   - action: utter_did_that_help
@@ -432,11 +328,18 @@ stories:
 
 - story: path 37
   steps:
-    - intent: discuss_depression
-    - action: utter_depression
-    - action: utter_did_that_help
-    - intent: affirm
-    - action: utter_happy
-    - intent: discuss_ADHD
-    - action: utter_ADHD
+  - intent: discuss_depression
+  - action: utter_depression
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - intent: discuss_ADHD
+  - action: utter_ADHD
 
+- story: happy path 2
+  steps:
+  - intent: get_started
+  - action: utter_greet
+  - intent: say_name
+  - action: action_save_name
+  - action: action_say_name
