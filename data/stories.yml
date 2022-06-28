@@ -6,8 +6,9 @@ stories:
   steps:
   - intent: get_started
   - action: utter_greet
-  - intent: greet
-  - action: utter_greet
+  - intent: say_name
+  - action: action_save_name
+  - action: action_say_name
   - intent: mood_great
   - action: utter_happy
 
@@ -406,8 +407,36 @@ stories:
 - story: Repeat
   steps:
   - intent: get_started
-  - intent: Repeat
-  - action: utter_what_to_repeat
-  - intent: What_to_repeat
-  - action: action_receive_sentence
-  - action: action_repeat_sentence
+  - intent: something_nice
+  - action: utter_something_nice
+  - action: utter_did_that_help
+
+- story: Repeat 2
+  steps:
+  - intent: discuss_depression
+  - action: utter_depression
+  - intent: something_nice
+  - action: utter_something_nice
+  - action: utter_did_that_help
+
+
+- story: path 36
+  steps:
+  - intent: get_started
+  - action: utter_greet
+  - intent: say_name
+  - action: action_save_name
+  - action: action_say_name
+  - intent: mental_health
+  - action: utter_mental_health
+
+- story: path 37
+  steps:
+    - intent: discuss_depression
+    - action: utter_depression
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+    - intent: discuss_ADHD
+    - action: utter_ADHD
+

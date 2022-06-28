@@ -39,10 +39,10 @@ nlu:
     - of course
     - that sounds good
     - correct
-    -okay
-    -ok
-    -okaay
-    -yup
+    - okay
+    - ok
+    - okaay
+    - yup
 
 - intent: deny
   examples: |
@@ -112,6 +112,10 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+    - can you help me?
+    - can you give me help?
+    - what can you do?
+    - what are you capable of?
 
 - intent: bot_hru
   examples: |
@@ -390,23 +394,72 @@ nlu:
     - How to defeat ADHD?
     - I have ADHD 
     
-- intent: Repeat
-  examples: |
-    - Repeat what I say
-    - Say after me
-    - repeat 
-    - say this
-    - say
-    - tell me this
     
 
-- intent: What_to_repeat
+- intent: something_nice
   examples: |
-    - You are beautiful
-    - you are amazing
-    - you are great
-    - you are capable
-    - everything will be okay
-    - everything is okay
-    - you will be okay
-    - you'll be fine
+    - tell me something nice
+    - tell me something great 
+    - change my mood
+    - enhance my mood
+    
+
+- intent: mental_health
+  examples: |
+    - what is mental health?
+    - tell me about mental health
+    - can you tell me more about mental health?
+    - mental health?
+    - what is the meaning of mental health?
+    - can you talk to me about mental health?
+    - my mental health
+    - what is my mental health?
+
+- intent: say_name
+  examples: |
+    - [zain](name)
+    - [soad](name)
+    - [menna](name)
+    - [fathy alaa](name)
+    - [rasha](name)
+    - [haidy](name)
+    - [yomna](name)
+    - [amira](name)
+    - [yara](name)
+    - [ali](name)
+    - [tarek](name)
+    - [mostafa](name)
+    - [nour](name)
+    - [mariam](name)
+    - [hala](name)
+    - [osama](name)
+    - [rawan](name)
+    - [gilan](name)
+    - [sally](name)
+    - [samia](name)
+    - [hossam](name)
+    - [nouran](name)
+    - [hassan](name)
+    - [islam](name)
+    - [fathy](name)
+    - [sy](name)
+    - [yy](name)
+    - [AM](name)
+    - [marwan mohemed](name)
+    - [abdelrahman](name)
+    - [ola roshdy](name)
+    - [marwa fathy](name)
+    - [nermeen saeed](name)
+    - [zidan](name)
+    - [amr](name)
+    - [mohamed](name)
+    - [ahmed](name)
+    - [bassel](name)
+    - [youssef](name)
+    - [omar](name)
+
+- intent: out_of_scope
+  examples: |
+    - i want to order food
+    - what is 2x2?
+    - who is the us president?
